@@ -1,3 +1,5 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 export default function HeroSection(){
     return (
         <div id="hero">
@@ -18,17 +20,26 @@ export default function HeroSection(){
                         <p className="mb-6 text-base sm:text-lg lg:text-xl font-mono border-l-2 border-primary pl-4 lg:pl-4 mx-auto lg:mx-0 text-justify">
                             Discover my projects, skills, and experience in web development.
                         </p>
-
-                        <div className="group mx-auto lg:mx-0">
-                            <a href="#Portfolio" 
-                            className="px-4 py-2 bg-primary text-white rounded-lg border-primary border-2 group-hover:bg-muted hover:text-primary transition">
-                                View Portfolio
-                                <span className="w-4 h-4 inline-block">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-full h-full">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </span>
+                        <div className="flex mx-auto lg:mx-0 justify-start items-center gap-4">
+                            <div className="group">
+                                <a href="#Portfolio" 
+                                className="px-4 py-2 bg-primary text-white rounded-lg border-primary border-2 group-hover:bg-muted hover:text-primary transition">
+                                    View Portfolio
+                                    <span className="w-4 h-4 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-full h-full">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div>
+                            <a
+                                href="#contact"
+                                className="px-4 py-2 border-2 border-primary bg-muted text-primary rounded-lg hover:bg-primary hover:text-white transition"
+                            ><i className="fa-solid fa-phone pr-2"></i>
+                                Contact Me
                             </a>
+                            </div>
                         </div>
                     </div>
 
