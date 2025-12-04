@@ -40,11 +40,11 @@ export default function Footer(){
                     </div>
                     
                     <div className="flex flex-wrap justify-center gap-6 text-lg">
-                    <a href="#" className="text-green-400 hover:underline">Facebook</a>
-                    <a href="#" className="text-green-400 hover:underline">Instagram</a>
-                    <a href="#" className="text-green-400 hover:underline">Twitter</a>
+                    <a href="https://www.facebook.com/mi.lana.521512" className="text-green-400 hover:underline">Facebook</a>
+                    <a href="https://www.instagram.com/meeln8/" className="text-green-400 hover:underline">Instagram</a>
+                    <a href="https://x.com/MeeLn84" className="text-green-400 hover:underline">Twitter</a>
                     <a href="#" className="text-green-400 hover:underline">LinkedIn</a>
-                    <a href="#" className="text-green-400 hover:underline">GitHub</a>
+                    <a href="https://github.com/MeeLn" className="text-green-400 hover:underline">GitHub</a>
                     </div>
                 </div>
                 </div>
@@ -52,10 +52,10 @@ export default function Footer(){
                 <div className="flex justify-between bg-background px-6 py-4 lg:py-0 lg:pt-4 lg:px-25 border-t border-gray-800">
                 <p>Copyright © 2025</p>
                 <div className="flex space-x-4 text-secondary text-2xl">
-                    <a href="#" className="hover:text-green-500"><i className="fab fa-facebook"></i></a>
-                    <a href="#" className="hover:text-green-500"><i className="fab fa-instagram"></i></a>
-                    <a href="#" className="hover:text-green-500"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="hover:text-green-500"><i className="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/mi.lana.521512" className="hover:text-green-500"><i className="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/meeln8/" className="hover:text-green-500"><i className="fab fa-instagram"></i></a>
+                    <a href="https://x.com/MeeLn84" className="hover:text-green-500"><i className="fab fa-twitter"></i></a>
+                    <a href="https://github.com/MeeLn" className="hover:text-green-500"><i className="fab fa-github"></i></a>
                     <a href="#" className="hover:text-green-500"><i className="fab fa-linkedin"></i></a>
                 </div>
                 </div>
