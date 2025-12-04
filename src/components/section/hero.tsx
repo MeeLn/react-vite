@@ -20,7 +20,7 @@ export default function HeroSection(){
                         </p>
 
                         <div className="group mx-auto lg:mx-0">
-                            <a href="#portfolio" 
+                            <a href="#Portfolio" 
                             className="px-4 py-2 bg-primary text-white rounded-lg border-primary border-2 group-hover:bg-muted hover:text-primary transition">
                                 View Portfolio
                                 <span className="w-4 h-4 inline-block">
