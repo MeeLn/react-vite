@@ -7,7 +7,12 @@ export default function ToggleTheme() {
             const saved = localStorage.getItem("theme");
             if (saved === "dark") return true;
             if (saved === "light") return false;
+
+            // If nothing is saved → use system preference
+            const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            return systemPrefersDark;
         }
+
         return true; 
     });
 
