@@ -72,7 +72,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
         >
           <a
-            href="#"
+            href="https://www.facebook.com/mi.lana.521512"
             className="flex items-center text-blue-600 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
           >
             <i className="fab fa-facebook"></i>
@@ -80,7 +80,7 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="#"
+            href="https://www.instagram.com/meeln8/"
             className="flex items-center text-red-400 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
           >
             <i className="fab fa-instagram"></i>
@@ -103,7 +103,7 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="#"
+            href="https://x.com/MeeLn84"
             className="flex items-center text-sky-400 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
           >
             <i className="fab fa-twitter"></i>

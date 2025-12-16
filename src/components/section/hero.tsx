@@ -54,7 +54,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <a
-                href="#portfolio"
+                href="#Portfolio"
                 className="px-4 py-2 bg-primary text-white rounded-lg border-primary border-2 hover:bg-muted hover:text-primary transition flex items-center gap-2
                 hover:scale-105"
               >

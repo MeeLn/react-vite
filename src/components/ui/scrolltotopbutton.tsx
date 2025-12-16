@@ -44,7 +44,7 @@ export default function ScrollToTop() {
       {visible && (
         <button
           onClick={scrollToTop}
-          className="fixed lg:bottom-6 lg:right-6 bottom-16 right-6 bg-primary text-white border-2 border-primary px-3 py-2 rounded-full hover:bg-muted hover:text-primary transition"
+          className="fixed lg:bottom-6 lg:right-6 bottom-16 z-50 right-6 bg-primary text-white border-2 border-primary px-3 py-2 rounded-full hover:bg-muted hover:text-primary transition"
         >
           <span className="w-4 h-4 inline-block">
             <svg

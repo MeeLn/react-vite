@@ -24,13 +24,13 @@ export default function Footer() {
             <div className="flex flex-col p-6 space-y-6">
               {/* Top Section */}
               <motion.div
-                className="flex flex-col md:flex-row md:justify-between items-center md:items-start space-y-6 md:space-y-0"
+                className="flex flex-col md:flex-row md:justify-between items-center space-y-6 md:space-y-0"
                 variants={fadeUp}
                 transition={{ delay: 0.1 }}
               >
                 {/* Profile */}
-                <div className="flex flex-col sm:flex-row sm:space-x-6 items-center text-left">
-                  <div className="border h-40 w-40 lg:rounded-full rounded-md shadow-sm shadow-gray-500">
+                <div className="flex flex-col md:order-1 order-2 sm:flex-row sm:space-x-6 items-center text-left">
+                  <div className="border h-40 w-40 hidden md:block mt-6 lg:rounded-full rounded-md shadow-sm shadow-gray-500">
                     <img
                       src="/profile_2.png"
                       alt="Profile"
@@ -38,7 +38,7 @@ export default function Footer() {
                     />
                   </div>
 
-                  <div className="flex flex-col mt-4 sm:mt-0 font-mono">
+                  <div className="flex flex-col-reverse md:flex-col mt-4 sm:mt-0 font-mono">
                     <p className="text-lg lg:text-2xl font-bold mb-2">
                       About Me
                     </p>
@@ -66,7 +66,7 @@ export default function Footer() {
                 </div>
 
                 {/* Skills */}
-                <div className="w-full md:w-1/3 font-mono">
+                <div className="order-1 md:order-2 w-full md:w-1/3 font-mono">
                   <h2 className="text-md lg:text-xl font-bold text-center">
                     Skills:
                   </h2>
@@ -81,7 +81,7 @@ export default function Footer() {
 
               {/* Text Links */}
               <motion.div
-                className="flex flex-wrap justify-center gap-6 text-lg"
+                className="flex flex-wrap justify-center gap-6 md:border-none md:pt-none pt-6 border-green-600 border-t text-sm md:text-lg"
                 variants={fadeUp}
                 transition={{ delay: 0.2 }}
               >
@@ -107,15 +107,17 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <motion.div
-          className="flex justify-between bg-background px-6 py-4 lg:pt-4 border-t border-gray-800"
+          className="flex md:flex-row flex-col justify-between bg-background md:px-30 px-10 py-4 lg:pt-4 border-t border-gray-800"
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <p>Copyright © 2025</p>
+          <div className="flex space-x-4 md:pt-none pt-2 justify-center text-secondary text-md">
+            <p>Copyright © 2025 Milan Raut</p>
+          </div>
 
-          <div className="flex space-x-4 text-secondary text-2xl">
+          <div className="flex space-x-4 md:pt-none pt-2 justify-center text-secondary text-2xl">
             {[
               ["facebook", "https://www.facebook.com/mi.lana.521512"],
               ["instagram", "https://www.instagram.com/meeln8/"],
