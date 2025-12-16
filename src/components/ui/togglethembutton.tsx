@@ -32,7 +32,7 @@ export default function ToggleTheme() {
   return (
     <button
       onClick={changeTheme}
-      className="fixed cursor-pointer z-50 lg:bottom-6 lg:left-6 bottom-16 left-6 px-3 py-3 
+      className="fixed cursor-pointer z-50 lg:bottom-6 lg:left-6 bottom-16 left-6 px-2 py-2 
       rounded-full bg-muted text-primary border-2 border-primary 
       hover:bg-primary hover:text-white transition"
     >
