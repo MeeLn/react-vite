@@ -12,6 +12,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            whileHover={{ x: 30, y: -30, scale: 1.1 }}
           >
             <img
               src="/profile_1.png"
@@ -54,7 +55,8 @@ export default function HeroSection() {
             >
               <a
                 href="#portfolio"
-                className="px-4 py-2 bg-primary text-white rounded-lg border-primary border-2 hover:bg-muted hover:text-primary transition flex items-center gap-2"
+                className="px-4 py-2 bg-primary text-white rounded-lg border-primary border-2 hover:bg-muted hover:text-primary transition flex items-center gap-2
+                hover:scale-105"
               >
                 View Portfolio
                 <svg
@@ -75,7 +77,7 @@ export default function HeroSection() {
 
               <a
                 href="#contact"
-                className="px-4 py-2 border-2 border-primary bg-muted text-primary rounded-lg hover:bg-primary hover:text-white transition"
+                className="px-4 py-2 hover:scale-105 border-2 border-primary bg-muted text-primary rounded-lg hover:bg-primary hover:text-white transition"
               >
                 <i className="fa-solid fa-phone pr-2"></i>
                 Contact Me

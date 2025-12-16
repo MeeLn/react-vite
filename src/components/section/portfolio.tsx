@@ -85,7 +85,7 @@ export default function PortfolioSection() {
                 key={index}
                 variants={cardVariants}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="bg-background lg:hover:bg-muted lg:border-2 text-secondary lg:p-4 shadow-lg border-t-2 border-b-2 border-primary hover:border hover:border-primary transition text-center"
+                className="bg-background hover:scale-105 lg:hover:bg-muted lg:border-2 text-secondary lg:p-4 shadow-lg border-t-2 border-b-2 border-primary hover:border hover:border-primary transition text-center"
               >
                 <h3 className="font-bold text-secondary text-lg">
                   {item.year}
@@ -103,7 +103,6 @@ export default function PortfolioSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
         >
           {[
             { label: "PROGRAMMING LANGUAGE", value: "80%" },
@@ -117,7 +116,7 @@ export default function PortfolioSection() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="flex flex-col items-center text-secondary"
             >
-              <div className="rounded-full h-32 w-32 border-4 border-primary flex items-center justify-center text-3xl font-bold">
+              <div className="rounded-full hover:scale-102 h-32 w-32 border-4 border-primary flex items-center justify-center text-3xl font-bold">
                 {skill.value}
               </div>
               <h3 className="mt-4 text-xl">{skill.label}</h3>

@@ -11,6 +11,7 @@ export default function AboutSection() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            whileHover={{ x: -30, y: 40, scale: 1.2 }}
           >
             <img
               src="/profile.png"
@@ -60,7 +61,7 @@ export default function AboutSection() {
               <a
                 href="/CV.pdf"
                 download="milan_cv.pdf"
-                className="px-4 py-2 bg-green-500 text-white rounded-lg border-green-500 border-2 group-hover:bg-muted hover:text-green-500 transition flex items-center gap-2"
+                className="px-4 py-2 hover:scale-105 bg-green-500 text-white rounded-lg border-green-500 border-2 group-hover:bg-muted hover:text-green-500 transition flex items-center gap-2"
               >
                 Download CV
                 <svg

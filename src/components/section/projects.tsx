@@ -75,7 +75,7 @@ export default function ProjectsSection() {
                 delay: 0.2 + 0.15 * index,
                 ease: "easeOut",
               }}
-              className="group bg-background hover:scale-101 hover:bg-muted border-2 border-background text-secondary p-4 shadow-lg hover:border hover:border-primary transition"
+              className="group bg-background hover:scale-105 hover:bg-muted border-2 border-background text-secondary p-4 shadow-lg hover:border hover:border-primary transition"
             >
               <img
                 src={project.img1}

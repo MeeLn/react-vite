@@ -71,12 +71,18 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <a href="#" className="flex items-center text-blue-600 text-4xl">
+          <a
+            href="#"
+            className="flex items-center text-blue-600 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
+          >
             <i className="fab fa-facebook"></i>
             <span className="text-2xl px-3">Facebook</span>
           </a>
 
-          <a href="#" className="flex items-center text-red-400 text-4xl">
+          <a
+            href="#"
+            className="flex items-center text-red-400 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
+          >
             <i className="fab fa-instagram"></i>
             <span className="text-2xl px-3">Instagram</span>
           </a>
@@ -88,12 +94,18 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <a href="#" className="flex items-center text-blue-500 text-4xl">
+          <a
+            href="#"
+            className="flex items-center text-blue-500 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
+          >
             <i className="fab fa-linkedin"></i>
             <span className="text-2xl px-3">LinkedIn</span>
           </a>
 
-          <a href="#" className="flex items-center text-sky-400 text-4xl">
+          <a
+            href="#"
+            className="flex items-center text-sky-400 text-4xl hover:scale-105 hover:-translate-y-1 transition-transform duratiom-300"
+          >
             <i className="fab fa-twitter"></i>
             <span className="text-2xl px-3">Twitter</span>
           </a>
@@ -141,7 +153,7 @@ export default function ContactSection() {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="px-5 py-2 bg-primary text-white rounded-lg border-2 border-primary hover:bg-background hover:text-primary transition"
+                    className="px-5 py-2 hover:scale-105 bg-primary text-white rounded-lg border-2 border-primary hover:bg-background hover:text-primary transition"
                   >
                     Send Message
                   </button>
