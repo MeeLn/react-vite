@@ -1,42 +1,42 @@
-import { useState, useEffect } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
 export default function ToggleTheme() {
+  const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null);
 
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        if (typeof window !== "undefined") {
-            const saved = localStorage.getItem("theme");
-            if (saved === "dark") return true;
-            if (saved === "light") return false;
+  useEffect(() => {
+    // Read theme from localStorage (client only)
+    const savedTheme = localStorage.getItem("theme");
+    const isDark = savedTheme === "dark";
 
-            // If nothing is saved → use system preference
-            const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            return systemPrefersDark;
-        }
+    setIsDarkMode(isDark);
 
-        return true; 
-    });
+    document.documentElement.classList.toggle("dark", isDark);
+  }, []);
 
-    useEffect(() => {
-        if (!isDarkMode) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "light");
-        }
-    }, [isDarkMode]);
+  const changeTheme = () => {
+    if (isDarkMode === null) return;
 
-    function changeTheme() {
-        setIsDarkMode(!isDarkMode);
-    }
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
 
-    return(
-        <button
-            onClick={changeTheme}
-            className="fixed lg:bottom-6 lg:left-6 bottom-16 left-6 px-4 py-3 
-                rounded-full bg-muted text-primary border-2 border-primary 
-                hover:bg-primary hover:text-white transition">
-            <i className={`fa-solid ${isDarkMode ? "fa-sun" : "fa-moon"}`}></i>
-        </button>
-    );
+    document.documentElement.classList.toggle("dark", newMode);
+    localStorage.setItem("theme", newMode ? "dark" : "light");
+  };
+
+  // Do NOT render anything until mounted
+  if (isDarkMode === null) return null;
+
+  return (
+    <button
+      onClick={changeTheme}
+      className="fixed cursor-pointer z-50 lg:bottom-6 lg:left-6 bottom-16 left-6 px-3 py-3 
+      rounded-full bg-muted text-primary border-2 border-primary 
+      hover:bg-primary hover:text-white transition"
+    >
+      {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+    </button>
+  );
 }
